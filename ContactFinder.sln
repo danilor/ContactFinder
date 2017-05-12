@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactFinder", "ContactFinder\ContactFinder.csproj", "{5AC1E98E-2E83-4BDD-A80B-A29FA829109F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontAwesomeIcons", "..\..\FontAwesome-WindowsForms\FontAwesomeIcons\FontAwesomeIcons.csproj", "{56F662A1-D1E3-453F-BF74-9D8D03B6AFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{A64F6378-6B98-47E0-953F-25C3A2EFBF29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicContact", "MagicContact\MagicContact.csproj", "{2AB76285-B447-415C-A427-12905DEB1F86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{5AC1E98E-2E83-4BDD-A80B-A29FA829109F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AC1E98E-2E83-4BDD-A80B-A29FA829109F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC1E98E-2E83-4BDD-A80B-A29FA829109F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56F662A1-D1E3-453F-BF74-9D8D03B6AFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F662A1-D1E3-453F-BF74-9D8D03B6AFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F662A1-D1E3-453F-BF74-9D8D03B6AFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F662A1-D1E3-453F-BF74-9D8D03B6AFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A64F6378-6B98-47E0-953F-25C3A2EFBF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64F6378-6B98-47E0-953F-25C3A2EFBF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64F6378-6B98-47E0-953F-25C3A2EFBF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64F6378-6B98-47E0-953F-25C3A2EFBF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB76285-B447-415C-A427-12905DEB1F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB76285-B447-415C-A427-12905DEB1F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB76285-B447-415C-A427-12905DEB1F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB76285-B447-415C-A427-12905DEB1F86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
