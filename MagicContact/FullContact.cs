@@ -9,6 +9,19 @@ using System.Net;
 using System.Web;
 using System.Xml;
 
+/*
+    Look at this code as you are facing the devil itself. Great, powerful and at the same time: mysterious, 
+    you don't really know what you are watching. 
+    
+    You know, that using this, you will open a door, a door that won’t close never again, and with this, 
+    allowing the flames of the underworld burn every inch of your very soul.
+    
+    This code, now it’s your weapon, your sword, so much power in your hands, so much responsibility upon you. 
+    It’s not a code, it’s a life, it’s a way to see the word through the eyes of those who forge it. 
+    Use it well; don’t fear the devil in front of you, but don’t let him 
+    persuade you to use your sword for evil purposes.
+
+*/
 namespace MagicContact
 {
     public class FullContact
@@ -52,11 +65,9 @@ namespace MagicContact
                 Console.WriteLine(err.Message);
             }
 
-
             Common.Utilities.Request req = new Common.Utilities.Request(aux);
             req.addHeader( this.apikeyheaderkey , this.apikey);
 
-           
             try{
                 String result = req.getPlain() ;
                 this.parseXMLString( result , email );
@@ -98,6 +109,8 @@ namespace MagicContact
                 String message = "The API URL could not be acceded. Please check your API KEY and access URL";
                 System.Console.WriteLine(message);
                 //throw new System.Exception( message );
+                // We are not sending the Exception and only returning false, this is for a better flow
+                // of the application.
                 return false;
             }
 

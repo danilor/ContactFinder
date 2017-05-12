@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+/**
+ * The engine search class is the parent class of all engines we are going to make.
+ * For example, Google has to inherit from this class and "overwrite" some special methods. My
+ * interest in here is that all Engines have a couple of methods that I will use for all of them.
+ * */
 
 namespace EngineSearch
 {
@@ -33,9 +37,9 @@ namespace EngineSearch
             }
             catch (Exception err)
             {
-                String message = "The API URL could not be acceded. Please check your API KEY and access URL";
+                String message = "The API URL could not be acceded. Please check your API KEY and access URL.";
                 System.Console.WriteLine(message);
-                throw new System.Exception( message );
+                throw new System.Exception( message , err );
             }
 
             return result;

@@ -17,7 +17,7 @@ namespace ContactFinder
         {
             InitializeComponent();
             this.ChangeEmailIcon(null, null);
-            this.txtEmail.Text = "daniloramirez.cr@gmail.com";
+            //this.txtEmail.Text = "youremail@domain.com";
         }
 
         /**

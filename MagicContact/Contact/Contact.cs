@@ -51,6 +51,11 @@ namespace MagicContact.Contact
             return this;
         }
 
+        /**
+         * Adding a single search engine result to the list.
+         * Each engine result has its "source" origin, so it will be easy to differenciate once they are being
+         * print.
+         * */
         public Contact addEngineResult(EngineSearch.Elements.ItemResult engine) {
             this.engine_results.Add( engine );
             return this;

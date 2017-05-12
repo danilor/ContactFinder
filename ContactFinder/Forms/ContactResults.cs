@@ -11,6 +11,9 @@ namespace ContactFinder
         private Contact contact = null;
         private Form parentForm = null;
 
+        /**
+         * DEFAULT SIZE FOR THE WINDOW. IT SHOULD BE JUST FINE WITHOUT THE ENGINE SEARCH RESULTS.
+         * */
         private int default_w = 546, default_h = 600;
 
         private Size pictureSize = new Size(50,50);
