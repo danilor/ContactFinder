@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Web;
+using HtmlAgilityPack;
+
 
 namespace Common.Utilities
 {
@@ -70,6 +72,10 @@ namespace Common.Utilities
             }
             return result;
         }
+        /*
+                        http://htmlagilitypack.codeplex.com/documentation
+             */
+        
 
     }
 }

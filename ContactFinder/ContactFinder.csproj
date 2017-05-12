@@ -145,6 +145,10 @@
       <Project>{a64f6378-6b98-47e0-953f-25c3a2efbf29}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EngineSearch\EngineSearch.csproj">
+      <Project>{65dcc9f1-1785-4a92-9465-267895e99671}</Project>
+      <Name>EngineSearch</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MagicContact\MagicContact.csproj">
       <Project>{2ab76285-b447-415c-a427-12905deb1f86}</Project>
       <Name>MagicContact</Name>

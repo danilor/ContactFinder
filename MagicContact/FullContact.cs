@@ -186,6 +186,15 @@ namespace MagicContact
                         this.contact.addPhoto(photo.SelectSingleNode("type").InnerText.ToString(), photo.SelectSingleNode("url").InnerText.ToString());
                     }
 
+
+                
+                EngineSearch.Engines.Google GoogleEngine = new EngineSearch.Engines.Google();
+                List<EngineSearch.Elements.ItemResult> google_results = GoogleEngine.search( email );
+
+                foreach ( EngineSearch.Elements.ItemResult item in google_results ) {
+                    this.contact.addEngineResult(item);
+                }
+
             }
             catch (Exception err) {
                 String message = "An error occurred parsing the contact information";

@@ -19,6 +19,8 @@ namespace MagicContact.Contact
         public List<ContactWebsite> websites = new List<ContactWebsite>();
         public List<ContactSocialProfile> social_profiles= new List<ContactSocialProfile>();
 
+        public List<EngineSearch.Elements.ItemResult> engine_results;
+
         public Contact addPhoto( String origin , String url ) {
             ContactPhoto photo = new ContactPhoto();
             photo.type      =   "photo";
@@ -47,6 +49,19 @@ namespace MagicContact.Contact
             sp.url = url;
             this.social_profiles.Add( sp );
             return this;
+        }
+
+        public Contact addEngineResult(EngineSearch.Elements.ItemResult engine) {
+            this.engine_results.Add( engine );
+            return this;
+        }
+
+        public List<EngineSearch.Elements.ItemResult> getEngineResults() {
+            /**
+             * This first step is to order the list by importance, no matter of the engine they come from
+             * */
+            this.engine_results = this.engine_results.OrderBy(o=>o.importance).ToList();
+            return this.engine_results;
         }
     }
 }

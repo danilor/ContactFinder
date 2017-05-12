@@ -17,7 +17,7 @@ namespace ContactFinder
         {
             InitializeComponent();
             this.ChangeEmailIcon(null, null);
-            //this.txtEmail.Text = "daniloramirez.cr@gmail.com";
+            this.txtEmail.Text = "daniloramirez.cr@gmail.com";
         }
 
         /**
@@ -41,6 +41,8 @@ namespace ContactFinder
                 else {
                     // If it arrives here, it means that the search was sucessfull and we can show something?
                     MagicContact.Contact.Contact contact = fullContact.getContact();
+                    EngineSearch.Engines.Google GoogleEngine = new EngineSearch.Engines.Google();
+                    
                     // We need to open the new window with the contact information
                     ContactResults ContactResult = new ContactResults(this, contact);
                     ContactResult.Show();

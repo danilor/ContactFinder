@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2AB76285-B447-415C-A427-12905DEB1F86}</ProjectGuid>
+    <ProjectGuid>{65DCC9F1-1785-4A92-9465-267895E99671}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MagicContact</RootNamespace>
-    <AssemblyName>MagicContact</AssemblyName>
+    <RootNamespace>EngineSearch</RootNamespace>
+    <AssemblyName>EngineSearch</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
-    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,26 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contact\Contact.cs" />
-    <Compile Include="Contact\ContactElement.cs" />
-    <Compile Include="Contact\ContactPhoto.cs" />
-    <Compile Include="Contact\ContactSocialProfile.cs" />
-    <Compile Include="Contact\ContactWebsite.cs" />
-    <Compile Include="FullContact.cs" />
+    <Compile Include="Elements\ItemResult.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Engines\Google.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{a64f6378-6b98-47e0-953f-25c3a2efbf29}</Project>
       <Name>Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EngineSearch\EngineSearch.csproj">
-      <Project>{65dcc9f1-1785-4a92-9465-267895e99671}</Project>
-      <Name>EngineSearch</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
