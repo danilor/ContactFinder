@@ -11,6 +11,8 @@ namespace ContactFinder
         private Contact contact = null;
         private Form parentForm = null;
 
+        private int default_w = 546, default_h = 600;
+
         private Size pictureSize = new Size(50,50);
 
         public ContactResults( Form parentForm , Contact contact )
@@ -18,6 +20,13 @@ namespace ContactFinder
             this.contact = contact;
             this.parentForm = parentForm;
             InitializeComponent();
+
+            /**
+             * We set up the width of the window. In the case that we have engine results to show we are going to change it
+             * First width, then height
+             * */
+            this.Size = new System.Drawing.Size(this.default_w, this.default_h);
+
             this.setUpContactInformation();
         }
 
@@ -170,6 +179,11 @@ namespace ContactFinder
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

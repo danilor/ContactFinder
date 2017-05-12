@@ -47,6 +47,7 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label7 = new System.Windows.Forms.Label();
             this.spaceSocialProfiles = new System.Windows.Forms.FlowLayoutPanel();
+            this.spaceEngineResults = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,9 +168,10 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(528, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1053, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -214,11 +216,19 @@
             this.spaceSocialProfiles.Size = new System.Drawing.Size(503, 61);
             this.spaceSocialProfiles.TabIndex = 14;
             // 
+            // spaceEngineResults
+            // 
+            this.spaceEngineResults.Location = new System.Drawing.Point(522, 40);
+            this.spaceEngineResults.Name = "spaceEngineResults";
+            this.spaceEngineResults.Size = new System.Drawing.Size(519, 447);
+            this.spaceEngineResults.TabIndex = 15;
+            // 
             // ContactResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 553);
+            this.ClientSize = new System.Drawing.Size(1053, 553);
+            this.Controls.Add(this.spaceEngineResults);
             this.Controls.Add(this.spaceSocialProfiles);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -274,5 +284,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveAsHTMLToolStripMenuItem;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.FlowLayoutPanel spaceSocialProfiles;
+        private System.Windows.Forms.FlowLayoutPanel spaceEngineResults;
     }
 }
